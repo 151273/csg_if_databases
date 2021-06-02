@@ -9,9 +9,12 @@ $waarde=9/10;
 $kwad=pow($waarde,2);
 $rec=1/$kwad;
 $afgerond=round($rec,7);
+$nieuwafgerond=floor($rec);
+
+
 
 echo "Het kwadraat van $waarde is $kwad.<br>
-      Het omgekeerde daarvan is (afgerond:) $afgerond<br>";
+      Het omgekeerde daarvan is (afgerond:) $nieuwafgerond<br>";
 
 /****************************
 EINDE VAN JOUW PHPCODE
