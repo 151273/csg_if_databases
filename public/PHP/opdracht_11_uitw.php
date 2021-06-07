@@ -48,6 +48,6 @@ mysqli_close($DBverbinding);
 
 /****************************
 EINDE VAN JOUW PHPCODE
-****************************/
+*********************
 include('opdracht_eind.php');
 ?>
