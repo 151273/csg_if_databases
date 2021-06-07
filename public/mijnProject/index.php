@@ -29,12 +29,13 @@ if (!$DBverbinding) {
         <a href="#home" class="active"><img id= "logo" src="images/logo_small.png"></a>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-             <a href="#Actie">Actie</a>
-             <a href="#Komedie">Komedie</a>
-             <a href="#Romantiek">Romantiek</a>
-             <a href="#Sci-fi">Sci-fi</a>
-             <a href="#Fantasie">Fantasie</a>
-             <a href="#Voorhethelegezin">Voor het hele gezin</a>      
+            <a href= "index.php">Home</a>
+             <a href="html/actie.php">Actie</a>
+             <a href="html/komedie.html">Komedie</a>
+             <a href="html/romantiek.html">Romantiek</a>
+             <a href="html/sci-fic.html">Sci-fi</a>
+             <a href="html/fantasie.html">Fantasie</a>
+             <a href="html/voorhethelegezin.html">Voor het hele gezin</a>      
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
