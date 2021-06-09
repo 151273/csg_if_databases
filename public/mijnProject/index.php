@@ -58,7 +58,6 @@ if (!$DBverbinding) {
         <h1>
             <?php echo 'een <strong>klein</strong> stukje PHP'; ?>
         </h1>
-        <img src="images/klinkt logisch.png">
     </div>
 </body>
 
