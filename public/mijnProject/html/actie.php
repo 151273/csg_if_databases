@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -11,6 +12,7 @@
 <body>
     <!-- Top Navigation Menu -->
     <div class="topnav">
+<<<<<<< HEAD
         <a href="#home" class="active"><img id="logo" src="../images/logo_small.png"></a>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
@@ -21,11 +23,24 @@
             <a href="sci-fic.html">Sci-fi</a>
             <a href="fantasie.html">Fantasie</a>
             <a href="voorhethelegezin.html">Voor het hele gezin</a>
+=======
+        <a href="#home" class="active"><img id= "logo" src="../images/logo_small.png"></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="../index.php">Home</a>
+             <a href="actie.php">Actie</a>
+             <a href="komedie.html">Komedie</a>
+             <a href="romantiek.html">Romantiek</a>
+             <a href="sci-fic.html">Sci-fi</a>
+             <a href="fantasie.html">Fantasie</a>
+             <a href="voorhethelegezin.html">Voor het hele gezin</a>      
+>>>>>>> dd906e38e9b144526349ef2043155e69d73e202b
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
+<<<<<<< HEAD
 
         <script>
             /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
@@ -122,4 +137,55 @@
             }
         </script>
     </body>
+=======
+    
+        <script>
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </div>
+<body>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="../images/1917.jpg" style="width:100%">
+    <div class="text">1917</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="../images/Blackpanther.jpg" style="width:100%">
+    <div class="text">blackpanther</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="../images/johnwick.jpg" style="width:100%">
+    <div class="text">johnwick</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</body>
+>>>>>>> dd906e38e9b144526349ef2043155e69d73e202b
 </body>
