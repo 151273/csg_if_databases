@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* display/results/page_selector.twig */
-class __TwigTemplate_782c793179e48cf4dc28fcb86c417ef53789f19b191ee8c909098aaa3010af47 extends \Twig\Template
+/* table/search/column_comparison_operators.twig */
+class __TwigTemplate_d3d6c67e43025787d06c79bbd98331d51d3c9d2c0611a9d85c46b286ac102291 extends \Twig\Template
 {
     private $source;
     private $macros = [];
@@ -34,24 +34,22 @@ class __TwigTemplate_782c793179e48cf4dc28fcb86c417ef53789f19b191ee8c909098aaa301
     {
         $macros = $this->macros;
         // line 1
-        echo "<td>
-  <form action=\"sql.php\" method=\"post\">
+        echo "<select id=\"ColumnOperator";
+        echo twig_escape_filter($this->env, ($context["search_index"] ?? null), "html", null, true);
+        echo "\" name=\"criteriaColumnOperators[";
+        echo twig_escape_filter($this->env, ($context["search_index"] ?? null), "html", null, true);
+        echo "]\">
     ";
-        // line 3
-        echo PhpMyAdmin\Url::getHiddenInputs(($context["url_params"] ?? null));
+        // line 2
+        echo ($context["type_operators"] ?? null);
         echo "
-    ";
-        // line 4
-        echo ($context["page_selector"] ?? null);
-        echo "
-  </form>
-</td>
+</select>
 ";
     }
 
     public function getTemplateName()
     {
-        return "display/results/page_selector.twig";
+        return "table/search/column_comparison_operators.twig";
     }
 
     public function isTraitable()
@@ -61,11 +59,11 @@ class __TwigTemplate_782c793179e48cf4dc28fcb86c417ef53789f19b191ee8c909098aaa301
 
     public function getDebugInfo()
     {
-        return array (  45 => 4,  41 => 3,  37 => 1,);
+        return array (  44 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("", "display/results/page_selector.twig", "/workspace/csg_if_databases/public/phpMyAdmin/templates/display/results/page_selector.twig");
+        return new Source("", "table/search/column_comparison_operators.twig", "/workspace/csg_if_databases/public/phpMyAdmin/templates/table/search/column_comparison_operators.twig");
     }
 }

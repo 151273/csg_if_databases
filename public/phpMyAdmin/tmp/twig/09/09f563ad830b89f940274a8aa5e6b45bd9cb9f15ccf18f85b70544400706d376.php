@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* display/results/page_selector.twig */
-class __TwigTemplate_782c793179e48cf4dc28fcb86c417ef53789f19b191ee8c909098aaa3010af47 extends \Twig\Template
+/* display/export/format_dropdown.twig */
+class __TwigTemplate_0de746e4b8690acae2a3f8e51c336ba66fcdb5a4a72bb762b06b77df5ae86796 extends \Twig\Template
 {
     private $source;
     private $macros = [];
@@ -34,24 +34,22 @@ class __TwigTemplate_782c793179e48cf4dc28fcb86c417ef53789f19b191ee8c909098aaa301
     {
         $macros = $this->macros;
         // line 1
-        echo "<td>
-  <form action=\"sql.php\" method=\"post\">
+        echo "<div class=\"exportoptions\" id=\"format\">
+    <h3>";
+        // line 2
+        echo _gettext("Format:");
+        echo "</h3>
     ";
         // line 3
-        echo PhpMyAdmin\Url::getHiddenInputs(($context["url_params"] ?? null));
+        echo ($context["dropdown"] ?? null);
         echo "
-    ";
-        // line 4
-        echo ($context["page_selector"] ?? null);
-        echo "
-  </form>
-</td>
+</div>
 ";
     }
 
     public function getTemplateName()
     {
-        return "display/results/page_selector.twig";
+        return "display/export/format_dropdown.twig";
     }
 
     public function isTraitable()
@@ -61,11 +59,11 @@ class __TwigTemplate_782c793179e48cf4dc28fcb86c417ef53789f19b191ee8c909098aaa301
 
     public function getDebugInfo()
     {
-        return array (  45 => 4,  41 => 3,  37 => 1,);
+        return array (  44 => 3,  40 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("", "display/results/page_selector.twig", "/workspace/csg_if_databases/public/phpMyAdmin/templates/display/results/page_selector.twig");
+        return new Source("", "display/export/format_dropdown.twig", "/workspace/csg_if_databases/public/phpMyAdmin/templates/display/export/format_dropdown.twig");
     }
 }

@@ -16,7 +16,7 @@ Nu jouw omgeving gemaakt is ga je de volgende keer RECHTSTREEKS naar gitpod.io. 
 *********************** BELANGRIJK BELANGRIJK BELANGRIJK BELANGRIJK BELANGRIJK BELANGRIJK ***********************
 *********************** BELANGRIJK BELANGRIJK BELANGRIJK BELANGRIJK BELANGRIJK BELANGRIJK ***********************
 
-DE SERVER BENADEREN
+DE SERVER BENADEREN ff
 
 Na het opstarten van deze omgeving voer je ALTIJD EERST deze twee stappen uit (en straks de RODE KNOP als derde stap!):
 1) Ga naar de terminal (tabblad >_/workspace/csg_if_databases) en typ achter $ in:  ./init_database.sh  (kies daarna Enter)
