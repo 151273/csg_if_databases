@@ -70,11 +70,8 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-<<<<<<< HEAD
   max-width: 80%;
-=======
   max-width: 1000px;
->>>>>>> dd906e38e9b144526349ef2043155e69d73e202b
   position: relative;
   margin: auto;
 }
