@@ -30,7 +30,7 @@ if (!$DBverbinding) {
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
             <a href="index.php">Home</a>
-            <a href="html/actie.php">Actie</a>
+            <a href="html/actie.html">Actie</a>
             <a href="html/komedie.html">Komedie</a>
             <a href="html/romantiek.html">Romantiek</a>
             <a href="html/sci-fic.html">Sci-fi</a>
@@ -110,14 +110,14 @@ window.onclick = function(event) {
 </script>
 
 <!-- Button to open the modal -->
-<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+<button onclick="document.getElementById('id01').style.display='block'">Maak een nieuw account</button>
 
 <!-- The Modal (contains the Sign Up form) -->
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">times;</span>
   <form class="modal-content" action="/action_page.php">
     <div class="container">
-      <h1>Sign Up</h1>
+      <h1>Maak een nieuw account</h1>
       <p>Please fill in this form to create an account.</p>
       <hr>
       <label for="email"><b>Email</b></label>
@@ -137,7 +137,7 @@ window.onclick = function(event) {
 
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signup">Sign Up</button>
+        <button type="submit" class="signup">Maak een nieuw account</button>
       </div>
     </div>
   </form>
