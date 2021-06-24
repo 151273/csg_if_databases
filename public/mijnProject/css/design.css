@@ -328,10 +328,24 @@ hr {
   }
 }
 
-#Actie h5 {
-    color: blue;
+#Uitleg h5 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 100%;
     text-align:center;
+}
+
+/*#Top3 ul li {
+    text-align: left;
+    height: 50%;
+}*/
+
+#Top3 h1 {
+    text-align: center;
+    font-size: medium;
+}
+
+#text h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
