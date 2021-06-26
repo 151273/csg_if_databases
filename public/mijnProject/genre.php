@@ -28,17 +28,13 @@ if (isset($_GET["g"])) {
 }
 
 ?>
-<!DOCTYPE html>
-<html>
+<?php
+include "php/head.php";
+include "php/header.php";
+?>
 
-<head>
-    <title>Rate a film!</title>
-    <link rel="stylesheet" type="text/css" href="css/design.css">
-</head>
+<main>
 
-
-<body style="background-image: url('images/achtergrond.jpg');">
-    <!-- Slideshow container -->
     <div class="slideshow-container">
         <?php
         $total = sizeof($films);
@@ -68,8 +64,13 @@ if (isset($_GET["g"])) {
             echo '<img src="' . $film["picture"] . '" style="width: 100%; border: solid 1.5px black;">';
             echo '<h1>' . $film["naam"] . '</h1>';
             echo '<p>' . $film["beschrijving"] . '</p>';
-            echo ' <div>
-            <form action="php/rate.php?v=2" method="post">
+            echo ' <div class="rating">';
+            if ($heeftRating) {
+                echo '<p class="ratinglabel">Score: <strong>'. $rating . '%</p>';
+            } else {
+                echo '<p class="ratinglabel">Nog geen rating!</p>';
+            }
+            echo '<form action="php/rate.php?v=2" method="post">
             <input type="hidden" name="film" value="' . $film["f_id"] . '">
             <button type="submit" value="1">Like</button>
             </form>
@@ -78,11 +79,7 @@ if (isset($_GET["g"])) {
             <button type="submit" value="1">Dislike</button>
             </form>
             </div>';
-            if ($heeftRating) {
-                echo "Score: ".$rating."%";
-            } else {
-                echo "Nog geen rating!";
-            }
+            
             echo '</div>';
             $huidig++;
         }
@@ -140,4 +137,8 @@ if (isset($_GET["g"])) {
         <h5>Op deze pagina kun je actie films raten. Je kunt hier aan de rechterkant op het duimpje omhoog of omlaag
             klikken. Aan de linkerkant kun je zien wat de top 3 is.</h5>
     </div>
-</body>
+
+</main>
+<?php
+include "php/footer.php";
+?>
