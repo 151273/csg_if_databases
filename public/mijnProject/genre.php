@@ -142,8 +142,7 @@ include "php/header.php";
         }
     </script>
     <div id="Uitleg">
-        <h5>Op deze pagina kun je actie films raten. Je kunt hier aan de rechterkant op het duimpje omhoog of omlaag
-            klikken. Aan de linkerkant kun je zien wat de top 3 is.</h5>
+        <h5>Op deze pagina kan je 5 verschillende films van een genre beoordelen nadat je ze gezien hebt. Ook kan je kijken of een film je leuk lijkt door de uitleg en de beoordeling. </h5>
     </div>
 </main>
 <?php
