@@ -2,6 +2,7 @@ html,body {
     margin: 0;
     padding: 0;
     background-image: 'website.jpg';
+    font-family: sans-serif;
 }
 
 body {
@@ -48,6 +49,8 @@ body {
   background-color: #29c1cf;
   color:black;
 }
+
+
 
 /* Style the active link (or home/logo) */
 .active {
@@ -345,12 +348,41 @@ hr {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-#Filmtop3 p {
-    text-align: left;
-}
-
 #text h1 {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+div.top3 h1 {
+    display: block;
+    width: 50%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 230px;
+    float: right;
+}
+
+div.top3 p {
+    font-size: small;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10px;
+}
+
+div.top3 {
+    border-style: solid;
+    margin-right: 1100px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+div.top3 li {
+    float: inline-end;
+    width :10%;
+    font-size: small;
+}
+
+
+
+
 
