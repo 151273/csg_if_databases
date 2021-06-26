@@ -7,7 +7,7 @@ html,body {
 }
 
 body {
-    background-image: url("../img/achtergrond.jpg");
+    background-image: url("../img/websiteback.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -340,5 +340,14 @@ hr {
 }
 
 .ratinglabel {
+    font-size: 1.1rem;
+}
+
+#Uitleg {
+    text-align: center;
+}
+
+.error {
+    color: red;
     font-weight: bold;
 }

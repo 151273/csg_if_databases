@@ -65,17 +65,25 @@ include "php/header.php";
             echo '<h1>' . $film["naam"] . '</h1>';
             echo '<p>' . $film["beschrijving"] . '</p>';
             echo ' <div class="rating">';
+
+            if (isset($_GET["alreadyRated"])) {
+                if ($_GET["alreadyRated"] == $film["f_id"]) {
+                    echo '<p class="error">Je hebt al deze film gerated!</p>';
+                }
+            }
             if ($heeftRating) {
-                echo '<p class="ratinglabel">Score: <strong>'. $rating . '%</p>';
+                echo '<p class="ratinglabel">Score: <strong>'. $rating . '%</strong></p>';
             } else {
                 echo '<p class="ratinglabel">Nog geen rating!</p>';
             }
             echo '<form action="php/rate.php?v=2" method="post">
             <input type="hidden" name="film" value="' . $film["f_id"] . '">
+            <input type="hidden" name="genre" value="' . $genreId . '">
             <button type="submit" value="1">Like</button>
             </form>
             <form action="php/rate.php?v=1" method="post">
             <input type="hidden" name="film" value="' . $film["f_id"] . '">
+            <input type="hidden" name="genre" value="' . $genreId . '">
             <button type="submit" value="1">Dislike</button>
             </form>
             </div>';
@@ -137,7 +145,6 @@ include "php/header.php";
         <h5>Op deze pagina kun je actie films raten. Je kunt hier aan de rechterkant op het duimpje omhoog of omlaag
             klikken. Aan de linkerkant kun je zien wat de top 3 is.</h5>
     </div>
-
 </main>
 <?php
 include "php/footer.php";
